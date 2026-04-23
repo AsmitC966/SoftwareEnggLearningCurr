@@ -1,0 +1,10 @@
+student_id,name,age,department
+101,Aarav,20,CSE
+102,Diya,19,AIML
+103,Rohan,21,CSE
+104,Meera,20,DS
+105,Kabir,22,AIML
+106,Ishaan,19,CSE
+107,Anaya,20,DS
+108,Vihaan,21,AIML
+109,Unknown,,CSE
