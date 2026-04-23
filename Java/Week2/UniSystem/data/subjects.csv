@@ -1,0 +1,6 @@
+subject_id,subject_name,dept_id,credits
+SUB01,DSA,D01,4
+SUB02,ML,D01,4
+SUB03,Circuits,D02,3
+SUB04,Thermo,D03,3
+SUB05,Linear Algebra,D04,4

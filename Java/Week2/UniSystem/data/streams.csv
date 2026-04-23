@@ -1,0 +1,6 @@
+stream_id,stream_name,dept_id
+S01,AI,D01
+S02,Data Science,D01
+S03,VLSI,D02
+S04,Robotics,D03
+S05,Applied Math,D04
