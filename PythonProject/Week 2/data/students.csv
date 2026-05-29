@@ -1,0 +1,4 @@
+student_id,name,email,dept_id,stream_id,enrollment_year,current_semester
+STU001,Alice Smith,alice@uni.edu,101,S01,2022,4
+STU002,Bob Johnson,bob@uni.edu,101,S01,2022,4
+STU003,Carol White,carol@uni.edu,102,S02,2023,2

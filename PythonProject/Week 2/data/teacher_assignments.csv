@@ -1,0 +1,4 @@
+assignment_id,teacher_id,subject_id,semester,assignment_date
+A001,T001,SUB101,3,2024-01-10
+A002,T001,SUB102,4,2024-06-01
+A003,T002,SUB101,3,2024-01-10

@@ -1,0 +1,4 @@
+record_id,student_id,subject_id,semester,marks_obtained,max_marks,exam_date
+M001,STU001,SUB101,3,85,100,2024-04-15
+M002,STU001,SUB102,4,92,100,2024-11-20
+M003,STU002,SUB101,3,78,100,2024-04-15

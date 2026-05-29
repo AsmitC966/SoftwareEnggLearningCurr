@@ -1,0 +1,4 @@
+dept_id,dept_name,dept_head_id,building,budget
+101,Computer Science,T001,Block A,500000
+102,Electronics,T005,Block B,450000
+103,Mechanical,T009,Block C,400000

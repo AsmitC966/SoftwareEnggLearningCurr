@@ -1,0 +1,4 @@
+subject_id,subject_name,dept_id,credits,semester_offered,max_marks
+SUB101,Data Structures,101,4,3,100
+SUB102,Algorithms,101,4,4,100
+SUB201,Circuit Theory,102,3,2,100

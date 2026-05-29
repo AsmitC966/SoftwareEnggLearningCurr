@@ -1,0 +1,4 @@
+teacher_id,name,email,dept_id,specialization,hire_date,salary
+T001,Dr. Alan Turing,alan@uni.edu,101,Algorithms,2015-08-01,95000
+T002,Prof. Grace Hopper,grace@uni.edu,101,Compilers,2010-01-15,105000
+T005,Dr. Emily Chen,emily@uni.edu,102,Signals,2018-06-01,88000

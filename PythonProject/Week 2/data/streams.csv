@@ -1,0 +1,4 @@
+stream_id,stream_name,dept_id,duration_years,fees_per_semester
+S01,B.Tech CSE,101,4,75000
+S02,B.Tech ECE,102,4,70000
+S03,B.Tech MECH,103,4,65000

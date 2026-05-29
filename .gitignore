@@ -1,0 +1,30 @@
+# === Java Build Artifacts ===
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.factorypath
+
+# === Python Cached Files ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# === System & IDE Files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

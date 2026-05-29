@@ -1,0 +1,4 @@
+session_id,subject_id,teacher_id,day,start_time,end_time,room,semester
+SES001,SUB101,T001,Monday,09:30,11:00,Lab-101,3
+SES002,SUB101,T001,Wednesday,09:30,11:00,Lab-101,3
+SES003,SUB201,T005,Tuesday,14:00,15:30,Room-205,2
