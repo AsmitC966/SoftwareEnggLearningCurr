@@ -14,17 +14,17 @@ from queries import (
 )
 
 print("Loading University Data System (Pandas)...")
-data = load_all_data()
+data = load_all_data() #Each CSV file is loaded into a DataFrame(data) and stored in a dictionary
 
 students    = data['students']
-marks       = data['marks']
+marks       = data['student_marks']
 subjects    = data['subjects']
 teachers    = data['teachers']
-sessions    = data['sessions']
-assignments = data['assignments']
+sessions    = data['class_sessions']
+assignments = data['teacher_assignments']
 departments = data['departments']
 
-print("\n" + "=" * 60)
+print("\n" + "=" * 60) 
 print("QUERY RESULTS (Python Pandas - DataFrame Ops)")
 print("=" * 60)
 
@@ -42,7 +42,7 @@ for dept_id, count in sorted(q4_dept_wise_student_count(students).items(), key=l
     print(f"  → Dept {dept_id}: {count} students")
 
 print("\n[Q5] Most intensive classroom:")
-print(f"  → {q5_most_intensive_classroom_schedule(sessions, departments)}")
+print(f"  → {q5_most_intensive_classroom_schedule(sessions, subjects, departments)}")
 
 print("\n[Q6] Student subjects + marks (first 3 students):")
 for name, subs in list(q6_student_subjects_marks(students, marks, subjects).items())[:3]:

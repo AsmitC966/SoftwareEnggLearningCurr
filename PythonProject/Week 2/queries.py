@@ -2,7 +2,7 @@ import pandas as pd
 
 def q1_highest_score_in_subject(marks_df, students_df, subject_id):
     """Q1: Highest score in a subject + student name"""
-    subject_marks = marks_df[marks_df['subject_id'] == subject_id]
+    subject_marks = marks_df[marks_df['subject_id'] == subject_id] # marks of the target subject
     if subject_marks.empty:
         return None
     
@@ -36,12 +36,20 @@ def q4_dept_wise_student_count(students_df):
     """Q4: Department-wise student count"""
     return students_df['dept_id'].value_counts().to_dict()
 
-def q5_most_intensive_classroom_schedule(sessions_df, departments_df):
-    """Q5: Room with the most class sessions"""
-    room_counts = sessions_df['room'].value_counts()
-    if room_counts.empty:
+
+def q5_most_intensive_classroom_schedule(sessions_df, subjects_df, departments_df):
+    """Q5: Find the department name with the highest number of class sessions"""
+    # 1. Join sessions to subjects to get the dept_id for each session
+    merged = sessions_df.merge(subjects_df[['subject_id', 'dept_id']], on='subject_id', how='left')
+    # 2. Join that result to departments to get the human-readable dept_name
+    merged = merged.merge(departments_df[['dept_id', 'dept_name']], on='dept_id', how='left')
+    # 3. Count how many times each department name appears
+    dept_counts = merged['dept_name'].value_counts()
+    if dept_counts.empty:
         return None
-    return {'room': room_counts.index[0], 'sessions': int(room_counts.iloc[0])}
+    # 4. Return the top department name and its total session count
+    return {'department': dept_counts.index[0], 'total_sessions': int(dept_counts.iloc[0])}
+
 
 def q6_student_subjects_marks(students_df, marks_df, subjects_df):
     """Q6: Each student's subjects + marks"""
